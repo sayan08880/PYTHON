@@ -1,7 +1,12 @@
-s1 = input("ENTER THE STRING : ")
-s2 =" "
-for i in range (len(s1)) :
-    if s1[i] not in "ieouaAOIUE":
-     s2 = s2 + s1[i]
-print("ORIGINAL STRING ",s1)
-print("NEW STRING ",s2)
+def count_vowels(string):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for letter in string:
+        if letter in vowels:
+            count += 1
+    return count
+
+string = input("Enter a sentence: ")
+vowel_count = count_vowels(string)
+print("Number of vowels:", vowel_count)
+

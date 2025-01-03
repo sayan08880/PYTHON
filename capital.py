@@ -6,4 +6,3 @@ for i in split:
     print(i.upper())
     print(i.lower())
     print(i.title())
-  
